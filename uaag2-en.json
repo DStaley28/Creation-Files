@@ -599,7 +599,7 @@
                                         },
                                         {
                                             "handle": "\"spell-out\":",
-                                            "text": text is spelled one character at a time, or according to language-dependent pronunciation rules.",
+                                            "text": "text is spelled one character at a time, or according to language-dependent pronunciation rules.",
                                         },
                                         {
                                             "handle": "At least two ways of speaking numerals:",
@@ -971,7 +971,7 @@
                     "handle": "Note: Modality Independence:",
                     "text": "Users interacting with a web browser may do so using one or more input methods including keyboard, mouse, speech, touch, and gesture. It's critical that each user be free to use whatever input method, or combination of methods, works best for a given situation. If every potential user task is made accessible — so multiple modalities are supported — a user can choose what works best. For instance, if a user can't use or doesn't have access to a mouse, but can use and access a keyboard, the keyboard can call a modality independent control to activate an OnMouseOver event. Another example is a user on a mobile device that lacks keyboard who uses uses taps, wirelessly connected devices, and voice commands to simulate discrete or keyboard input. See Independent User Interface: Events for additional information on APIs and techniques for modality independent controls."
                 }
-            ]
+            ],
             "guidelines": [
                 {
                     "id": "UAAG2:keyboard",
@@ -1115,7 +1115,7 @@
                             "id": "UAAG2:direct-nav-user-interface",
                             "num": "2.3.4",
                             "handle": "Present Direct Commands in User Interface",
-                            "text": "The user can have any direct commands in the UA user interface (e.g. keyboard shortcuts) be presented with their associated user interface controls (e.g. "Ctrl+S" displayed on the "Save" menu item and toolbar button).",
+                            "text": "The user can have any direct commands in the UA user interface (e.g. keyboard shortcuts) be presented with their associated user interface controls (e.g. \"Ctrl+S\" displayed on the \"Save\" menu item and toolbar button).",
                             "level": "AA"
                         },
                         {
@@ -1352,7 +1352,7 @@
                                         },
                                         {
                                             "handle": "Extend:",
-                                            "text": "Users are warned before time expires and given at least 20 seconds to extend the time limit with a simple action (e.g. "press the space bar"), and users are allowed to extend the time limit at least ten times"
+                                            "text": "Users are warned before time expires and given at least 20 seconds to extend the time limit with a simple action (e.g. \"press the space bar\"), and users are allowed to extend the time limit at least ten times"
                                         },
                                         {
                                             "handle": "Real-time Exception:",
@@ -1634,7 +1634,7 @@
                             "id": "UAAG2:doc-accessible",
                             "num": "3.2.1",
                             "handle": "Accessible Documentation",
-                            "text": "Product documentation is available in a format that meets success criteria of WCAG 2.0 level "A" or greater.",
+                            "text": "Product documentation is available in a format that meets success criteria of WCAG 2.0 level \"A\" or greater.",
                             "level": "A"
                         },
                         {
