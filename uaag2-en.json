@@ -10,7 +10,7 @@
                     "id": "UAAG2:text-equiv",
                     "num": "1.1",
                     "handle": "Alternative Content",
-                    "text": "Provide access to alternative content"
+                    "text": "Provide access to alternative content",
                     "successcriteria": [
                         {
                             "id": "UAAG2:text-equiv-summary",
@@ -43,7 +43,7 @@
                             "id": "UAAG2:text-equiv-replace-non-text-content",
                             "num": "1.1.3",
                             "handle": "Replace Non-Text Content",
-                            "text": "The user can request a placeholder that incorporates recognized text alternative content instead of recognized non-text content, until explicit user request to render the non-text content."
+                            "text": "The user can request a placeholder that incorporates recognized text alternative content instead of recognized non-text content, until explicit user request to render the non-text content.",
                             "level": "A"
                         },
                         {
