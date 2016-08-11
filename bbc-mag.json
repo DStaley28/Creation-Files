@@ -1,0 +1,386 @@
+{
+    "mobile-accessibility-guidelines": [
+        {
+            "id": "BBCMAG:user-experience",
+            "num": "1",
+            "handle": "User Experience",
+            "text": "The subset of standards and guidelines below are relevant to anyone involved in design and development but especially designers, interaction designers, user experience architects, usability specialists and such like. Please also refer to the BBC Global Experience Language and the BBC Editorial Guidelines.",
+            "guidelines": [
+                {
+                    "id": "BBCMAG:principles",
+                    "num": "1.1",
+                    "handle": "Principles",
+                    "text": "Where possible include standard interface controls in designs rather than custom built controls. These are familiar to users and often come with accessibility built in. For example a standard iOS UI component for a 'slider' used for volume control will come with a hint to let VoiceOver users know how to use it and is a familiar design pattern used in other apps.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "",
+                                    "text": "Use platform and web standards as intended"
+                                },
+                                {
+                                    "handle": "",
+                                    "text": "Ust standard interface controls where possible"
+                                },
+                                {
+                                    "handle": "",
+                                    "text": "Support platform accessibility"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "note",
+                            "handle": "Note",
+                            "text": "If custom components are used research how similar standard UI components have accessibility built in and mimic this as far as possible. You can do this by using VoiceOver to test apps that come bundled with iOS."
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:audio-video"
+                    "num": "1.2",
+                    "handle": "Audio and Video",
+                    "text": "",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "items": [
+                                {
+                                    "handle": "Must",
+                                    "text": "Subtitles, signing and audio description"
+                                },
+                                {
+                                    "handle": "Must Not",
+                                    "text": "Autoplay",
+                                    "details":[
+                                        {
+                                            "type": "note",
+                                            "handle": "Should",
+                                            "text": "Metadata"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "note",
+                            "handle": "Note 1",
+                            "text": "The font size, style and positioning should be considered when designing media players and how content is presented. This is handled by the Media Playout UX team at BBC."
+                        },
+                        {
+                            "type": "note",
+                            "handle": "Note 2",
+                            "text": "If there is a genuine reason why content should autoplay, design an accessible pop up to allow first time users to set their preference to always autoplay or never autoplay content."
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:design",
+                    "num": "1.3",
+                    "handle": "Design",
+                    "text": "Everything within this category should be documented and signed off before build. User Experience are responsible for annotating wireframes and UX, documenting colour contrast, alternatives for meaning and colour, target size, spacing, how the page zooms, visual presentation of links, buttons etc, and styles for hover, focus, selected and touch states.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Colour Contrast"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Colour and Meaning"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Styling and Readability"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Touch Target Size"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Spacing"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Zoom"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Actionable Elements"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Visible Focus",
+                                    "details":[
+                                        {
+                                            "type": "note",
+                                            "handle": "Should",
+                                            "text": "Consistent Components"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "note",
+                            "handle": "Note",
+                            "text": "All the above must be signed off during UX. Please refer to BBC Global Experience Language for more depth on the above."
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:edit",
+                    "num": "1.4",
+                    "handle": "Editorial",
+                    "text": "Ensure labels for buttons, links and headings is consistent for repeated features or functionality. This should be worked on closely with Editorial and referencing the BBC Editorial Guidelines.",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "handle": "Should",
+                            "text": "Consistent Labelling"
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:focus",
+                    "num": "1.5",
+                    "handle": "Focus",
+                    "text": "The order in which content is presented visually will impact the order in which content is coded. This then becomes the order in which a keyboard only user, voice input user or screen reader users consumes content. A logical order should be followed in order to support a clear flow of information.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items": [
+                                {
+                                    "handle": "Must",
+                                    "text": "Content Order"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Focus Order"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:forms",
+                    "num": "1.6",
+                    "handle": "Forms",
+                    "text": "",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Input Labels"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Form Layout"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Keyboard Input Types"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Group Form Inputs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:images",
+                    "num": "1.7",
+                    "handle": "Images",
+                    "text": "Text should be presented as text and styled appropriately while background images should only be used if they don't convey primary information or have an alternative. Work with developers to decide what types of alternatives for background images are suitable.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Should",
+                                    "text": "Images of Text"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Background Images"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:links",
+                    "num": "1.8",
+                    "handle": "Links",
+                    "text": "While mainly the responsibility of development positioning and layout should allow for link text and images to be grouped as one link.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "handle": "Must",
+                            "text": "Repeated Links"
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:notif",
+                    "num": "1.9",
+                    "handle": "Notifications",
+                    "text": "",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Instructions"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Changes of State"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Standard Operating System Alerts"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Error Messages"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Error Correction"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "note",
+                            "handle": "Note",
+                            "text": "All of the above must be addressed during UX and annotations of what is required communicated to development."
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:script-dyn-content",
+                    "num": "1.10",
+                    "handle": "Scripts and Dynamic Content",
+                    "text": "UX should provide alternatives for pages when JavaScript is not supported.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "handle": "Must",
+                            "text": "Javascript Alternatives"
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:struct",
+                    "num": "1.11",
+                    "handle": "Structure",
+                    "text": "It is essential that UX conveys the intended structure of a document or screen. This underpins logical content and focus order and drives data driven design.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Headings"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Containers and Landmarks"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:recomm",
+                    "num": "1.12",
+                    "handle": "Recommendations",
+                    "text": "",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "",
+                                    "text": "Offer a core accessible website"
+                                },
+                                {
+                                    "handle": "",
+                                    "text": "Link mobile and desktop sites"
+                                },
+                                {
+                                    "handle": "",
+                                    "text": "Use progressive enhancement"
+                                },
+                                {
+                                    "handle": "",
+                                    "text": "Minimise text fields"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "BBCMAG:dev",
+            "num": "2",
+            "handle": "Developers",
+            "text": "Overall developers are responsible for technical accessibility where following web and platform standards reinforces best practice and support for users of access technology. While QA and Test are on hand to text the code outputted developers should test content day by day. Developers should also enrol on the BBC Academy Accessibility for Web Developers course (BBC Internal Link).",
+            "guidelines": [
+                {
+                    "id": "BBCMAG:dev-audio-video",
+                    "num": "2.1",
+                    "handle": "Audio and Video",
+                    "text": "While the responsibility of developers the BBC Media Playout Team owns development of the BBC Standard Media Player.",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "items": [
+                                {
+                                    "handle": "Must Not",
+                                    "text": "Autoplay"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Metadata"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-edit",
+                    "num": "2.2",
+                    "handle": "Editorial",
+                    "text": "",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Indicating Language"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Changes In Language"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-focus",
+                    "num": "2.3",
+    ]
+}
