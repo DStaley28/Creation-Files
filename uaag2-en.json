@@ -1,0 +1,1944 @@
+{
+    "principles": [
+        {
+            "id": "UAAG2:perceivable",
+            "num": "1",
+            "handle": "Perceivable",
+            "text": "Ensure that the user interface and rendered content are perceivable",
+            "guidelines": [
+                {
+                    "id": "UAAG2:text-equiv",
+                    "num": "1.1",
+                    "handle": "Alternative Content",
+                    "text": "Provide access to alternative content"
+                    "successcriteria": [
+                        {
+                            "id": "UAAG2:text-equiv-summary",
+                            "num": "1.1.0",
+                            "handle": "Summary",
+                            "text": "The user can choose to render any type of alternative content available (1.1.1) with an indicator that the alternative content is present (1.1.2) or a placeholder replacing the non-text content (1.1.3) . It's recommended that users can also choose at least one alternative, such as alt text, to be displayed by default (1.1.5). It's recommended that caption text or sign language alternative cannot obscure the video or the controls (1.1.4) and that the user can configure the text (1.1.6), size and position of media alternatives (1.1.7)."
+                        }
+                        {
+                            "id": "UAAG2:text-equiv-render-alt-content",
+                            "num": "1.1.1",
+                            "handle": "Render Alternative Content",
+                            "text": "The user can choose to render any type of recognized alternative content that is present for a content element.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note:,
+                                    "handle": "Note",
+                                    "text": "It is recommended that the user agent allow the user to choose whether the alternative content replaces or supplements the original content element."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:text-equiv-unrender-alt-content",
+                            "num": "1.1.2",
+                            "handle": "Indicate Unrendered Alternative Content",
+                            "text": "The user can specify that indicators be displayed along with rendered content when recognized unrendered alternative content is present.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:text-equiv-replace-non-text-content",
+                            "num": "1.1.3",
+                            "handle": "Replace Non-Text Content",
+                            "text": "The user can request a placeholder that incorporates recognized text alternative content instead of recognized non-text content, until explicit user request to render the non-text content."
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:text-equiv-time-based-media",
+                            "num": "1.1.4",
+                            "handle": "Facilitate Clear Display of Alternative Content for Time-Based Media",
+                            "text": "For recognized on-screen alternative content for time-based media (e.g. captions, sign language video), the following are all true:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Don't obscure controls",
+                                            "text": "Displaying time-based media alternatives doesn't obscure recognized controls for the primary time-based media."
+                                        },
+                                        {
+                                            "handle": "Don't obscure primary media",
+                                            "text": "The user can specify that displaying time-based media alternatives doesn't obscure the primary time-based media."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note"
+                                    "handle": "Note",
+                                    "text": "Depending on the screen area available, the display of the primary time-based media can need to be reduced in size to meet this requirement."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:text-equiv-provide-config-alt-content-defaults",
+                            "num": "1.1.5",
+                            "handle": "Provide Configurable Alternative Content Defaults",
+                            "text": "The user can specify which type(s) of alternative content to render by default for each type of non-text content, including time based media.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:text-equiv-time-based-media-caps",
+                            "num": "1.1.6",
+                            "handle": "Use Configurable Text for Time-based Media Captions",
+                            "text": "For recognized on-screen alternative content for time-based media (e.g. captions, sign language video), the user can configure recognized text within time-based media alternatives (e.g. captions) in conformance with 1.4.1.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:text-equiv-resize-and-reposition",
+                            "num": "1.1.7",
+                            "handle": "Allow Resize and Reposition of Time-based Media Alternatives",
+                            "text": "The user can configure recognized alternative content for time-based media (e.g. captions, sign language video) as follows:",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        { 
+                                            "handle": "Resize",
+                                            "text": "The user can resize alternative content for time-based media to at least 50% of the size of the top-level viewports."
+                                        },
+                                        {
+                                            "handle": "Reposition",
+                                            "text": "The user can reposition alternative content for time-based media to two or more of the following: above, below, to the right, to the left, and overlapping the primary time-based media."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note 1",
+                                    "text": "Depending on the screen area available, the display of the primary time-based media can need to be reduced in size or hidden to meet this requirement."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note 2",
+                                    "text": "Implementation can involve displaying alternative content for time-based media in a separate viewport, but this is not required."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:repair-equiv",
+                    "num": "1.2",
+                    "handle": "Repair Content",
+                    "text": "Repair missing content",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:repair-equiv-summary",
+                            "num": "1.2.0",
+                            "handle": "Summary",
+                            "text": "The user can request useful alternative content when the author fails to provide it. For example, showing metadata in place of missing or empty (1.2.1) alt text. The user can ask the browser to predict missing structural information, such as field labels, table headings or section headings (1.2.2)."
+                        },
+                        {
+                            "id": "UAAG2:repair-equiv-support-repair",
+                            "num": "1.2.1",
+                            "handle": "Support Repair by Assistive Technologies",
+                            "text": "If text alternatives for non-text content are missing or empty, the user agent doesn't attempt to repair the text alternatives by substituting text values that are also available to assistive technologies (e.g. image file name).",
+                            "level": "AA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:content-highlight",
+                    "num": "1.3",
+                    "handle": "Highlighting Content",
+                    "text": "Provide highlighting for selection, keyboard focus, enabled elements, visited links"
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:content-highlight-summary",
+                            "num": "1.3.0",
+                            "handle": "Summary",
+                            "text": The user can visually distinguish between selected, focused, and enabled items; and recently visited links (1.3.1); with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).",
+                        },
+                        {
+                            "id": "UAAG2:content-highlight-distinguish",
+                            "num": "1.3.1",
+                            "handle": "Distinguishable Highlighting"
+                            "text": "The user can have the following types of content uniquely highlighted, overriding any values specified by the author:",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Selection"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "In-page search results"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Active keyboard focus (indicated by focus cursors and/or text cursors)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Unvisited links"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Visited links"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:content-highlight-options",
+                            "num": "1.3.2",
+                            "handle": "Highlighting Options",
+                            "text": The user can set all of the following characteristics of selection highlighting, overriding any values specified by the author:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Foreground color"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Background color"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:content-highlight-focus",
+                            "num": "1.3.3",
+                            "handle": Highlighting Active Keyboard Focus",
+                            "text": "The user can set all of the following characteristics of active keyboard focus highlighting, overriding any values specified by the author:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                      {
+                                          "handle": "",
+                                          "text": "Foreground color"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "Background color"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "Border (color, style, and thickness)"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "Text cursor blink rate"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "id": "UAAG2:content-highlight-enabled-elements",
+                          "num": "1.3.4",
+                          "handle": "Distinguished Enabled Elements",
+                          "text": "The user can set all of the following characteristics of enabled element highlighting, overriding any values specified by the author:",
+                          "level": "AA",
+                          "details": [
+                              {
+                                  "type": "ulist",
+                                  "items":[
+                                      {
+                                          "handle": "",
+                                          "text": "Foreground color"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "Background color"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "Border (color, style, and thickness)"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "id": "UAAG2:content-highlight-distinguish",
+                          "num": "1.3.5",
+                          "handle": "Distinguishing Enabled Elements",
+                          "text": "The user can set all of the following characteristics for visited links and separately for unvisited links, overriding any values specified by the author:",
+                          "level": "AA",
+                          "details":[
+                              {
+                                  "type": "ulist",
+                                  "items":[
+                                      {
+                                          "handle": "",
+                                          "text": "Foreground color"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "Underline"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+                },
+                {
+                    "id": "UAAG2:text-config",
+                    "num": "1.4",
+                    "handle": "Text Configuration",
+                    "text": "Provide text configuration",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:text-config-summary",
+                            "num": 1.4.0",
+                            "handle": "Summary",
+                            "text": "The user can set text scale, color, style, line spacing, and font family globally (1.4.1, Level A). It is recommended that the user agent implement the user-selected text configuration settings of the platform (1.4.5 Level AA), users set text size, color, line spacing, text style and font family for element types (1.4.2, Level AA); set character spacing, justification and margin sizes globally (1.4.3, Level AA); set capitalization, hyphenation, and borders globally (1.4.6, Level AAA); and print configured and reflowed text (1.4.4 Level AA).",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note 1",
+                                    "text": "The success criteria in guideline 1.4 can be met through user stylesheets. For platforms without user stylesheets, text configuration needs to be provided to users through the user agent's main user interface or via an add-on."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note 2",
+                                    "text": "Users have varying needs for text size and spacing. Therefore, it’s recommended that user agents provide a wider range of values, and a greater number of increments, to allow the user to adjust the view for their current task."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:text-config-global-format",
+                            "num": "1.4.1",
+                            "handle": "Basic text formatting (Global)",
+                            "text": "The user can globally set all of the following characteristics of visually rendered text content:",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Text scale with preserved size distinctions (e.g. keeping headings proportional to main font)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Text color and background color, choosing from all platform color options"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Font family, choosing from all installed fonts"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Line spacing, choosing from a range with at least three values up to at least 2 times the default"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Text style, choosing to turn on/off underline, italic, bold"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:text-config-element-format",
+                            "num": "1.4.2",
+                            "handle": "Basic text formatting /(by Element)",
+                            "text": "The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Text size (e.g. 18 point) or scale (e.g. 150%)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": Text color and background color, choosing from all platform color options"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Font family, choosing from at least all installed fonts"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Line spacing, choosing from a range with at least three values up to at least 2 times the default"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Text style, choosing to turn on/off underline, italic, bold"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Margins around blocks of text"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Borders"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:text-config-text-blocks",
+                            "num": "1.4.3",
+                            "handle": "Blocks of text (Globally)",
+                            "text": "The user can globally set all of the following characteristics of visually rendered blocks of text:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Character spacing, choosing from a range with at least 5 values"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Justification (left or right, including turning off full justification)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Margins around blocks of text"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Borders"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:text-config-reflowed-printing",
+                            "num": "1.4.4",
+                            "handle": "Configured and Reflowed Text Printing",
+                            "text": "The user can print the rendered content, and the following are all true:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "any visual, non-time-based, rendered content can be printed"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "the user can choose between available printing devices"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "the user can have content printed as it is rendered on screen, reflecting any user scaling, highlighting, and other modifications"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "the user can have printed content reflow as if the top-level viewports had been resized to match the horizontal dimension of the printing device's printable area"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:text-config-platform-settings",
+                            "num": "1.4.5",
+                            "handle": "Default to platform text settings",
+                            "text": "The user can specify that platform text settings be used as the default values for text configuration.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:text-config-advanced-formatting",
+                            "num": "1.4.6",
+                            "handle": "Advanced text formatting",
+                            "text": "The user can globally set all of the following characteristics of visually rendered blocks of text:",
+                            "level": "AAA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Capitalization (overriding upper case and small caps style)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Word-breaking properties (e.g. auto-hyphenation)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Word spacing (choosing from a range of at least 5 values)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "This success criterion does not apply to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:volume-config",
+                    "num": "1.5",
+                    "handle": "Volume Configuration",
+                    "text": "Provide volume configuration",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:volume-config-summary",
+                            "num": "1.5.0",
+                            "handle": "Summary",
+                            "text": "The user can adjust the volume of each audio track relative to the global volume level (1.5.1)."
+                        },
+                        {
+                            "id": "UAAG2:volume-config-global",
+                            "num": "1.5.1",
+                            "handle": "Global Volume",
+                            "text": "The user can adjust the volume of each audio track independently of other tracks, relative to the global volume level set through operating environment mechanisms.",
+                            "level": "A"
+                        }
+                    ]
+                },
+                {
+                   "id": "UAAG2:synth-speech-config",
+                    "num": "1.6",
+                    "handle": "Speech Configuration",
+                    "text": "Provide synthesized speech configuration",
+                    "successcriteria":[
+                        { 
+                            "id": "UAAG2:synth-speech-config-summary",
+                            "num": "1.6.0",
+                            "handle": "Summary",
+                            "text": "If synthesized speech is produced, the user can specify speech rate, volume, and voice (1.6.1, Level A), pitch and pitch range (1.6.2, Level AA), advanced synthesizer speech characteristics such as emphasis (1.6.3, Level AAA) and features such as spelling (1.6.3, Level AAA)."
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "If browsers provide speech output for mainstream users, they should make the speech configurable enough to be usable by a wide range of individuals. When an add-on adds speech output to the user agent, it becomes part of the user agent, and therefore should meet the requirements of 1.6."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:synth-speech-config-speech-rate",
+                            "num": "1.6.1",
+                            "handle": "Speech Rate, Volume, and Voice",
+                            "text": "If synthesized speech is produced, the user can specify the following:",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Speech rate"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Speech volume (independently of other sources of audio)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Voice, when more than one voice is available"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:synth-speech-config-pitch-and-range",
+                            "num": "1.6.2",
+                            "handle": "Speech Pitch and Range",
+                            "text": "If synthesized speech is produced, the user can specify the following if offered by the speech synthesizer:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "Pitch (average frequency of the speaking voice)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Pitch range (variation in average frequency)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "Because the technical implementations of text to speech engines vary (e.g. formant-based synthesis, concatenative synthesis), a specific engine may not support varying pitch or pitch range. A user agent should expose the availability of pitch and pitch range control if the currently selected or installed text to speech engine offers this capability."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:synth-speech-config-synth-features",
+                            "num": "1.6.3",
+                            "handle": "Synthesized Speech Features",
+                            "text": "If synthesized speech is produced, the following features are provided:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "User-defined add-ons",
+                                            "text": "to the synthesized speech dictionary."
+                                        },
+                                        {
+                                            "handle": "\"spell-out\":",
+                                            "text": text is spelled one character at a time, or according to language-dependent pronunciation rules."
+                                        },
+                                        {
+                                            "handle": "At least two ways of speaking numerals:",
+                                            "text": "spoken as individual digits and punctuation (e.g. \"one two zero three point five\" for 1203.5 or \"one comma two zero three point five\" for 1,203.5), and spoken as full numbers are spoken (e.g. \"one thousand, two hundred and three point five\" for 1203.5)."
+                                        },
+                                        {
+                                            "handle": "At least two ways of speaking punctuation",
+                                            "text": "spoken literally, and with punctuation understood from speech characteristics like pauses."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:synth-speech-config-synth-lang",
+                            "num": "1.6.4",
+                            "handle": "Synthesized Speech Language",
+                            "text": "If synthesized speech is produced and more than one language is available, the user can change the language.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:synth-speech-config-adv-characteristics",
+                            "num": "1.6.5",
+                            "handle": "Advanced Speech Characteristics",
+                            "text": "If synthesized speech is produced, the user can adjust all of the speech characteristics provided by the speech synthesizer.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:stylesheet-config",
+                    "num": "1.7",
+                    "handle": "Stylesheet Configuration",
+                    "text": "Enable configuration of user stylesheets",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:stylesheet-config-summary",
+                            "num": "1.7.0",
+                            "handle": "Summary",
+                            "text": "The user agent can disable author stylesheets (1.7.1, Level A) , supports user stylesheets or style mechanism (1.7.2, Level A), the user can choose which if any user-supplied (1.7.3, Level A) stylesheets to use, and the user can save stylesheets (1.7.4, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:stylesheet-config-disable",
+                            "num": "1.7.1",
+                            "handle": "Disable Author Stylesheets",
+                            "text": "If the user agent supports a mechanism for author styles, the user can disable the use of author styles on the current page.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:stylesheet-config-support-and-mod",
+                            "num": "1.7.2",
+                            "handle": "Support User Stylesheet or User Style Modification Mechanism",
+                            "text": "If the user agent supports a mechanism for author styles, the user agent also provides a mechanism for a user styling to override author styling.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:stylesheet-config-apply",
+                            "num": "1.7.3",
+                            "handle": "Apply User Stylesheets",
+                            "text": "If user styles are supported, then the user can enable or disable user styles for:",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "All pages on specified websites"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "All pages"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:stylesheet-config-save-copies",
+                            "num": "1.7.4",
+                            "handle": "Save Copies of Stylesheets",
+                            "text": "The user can save copies of the stylesheets referenced by the current page. This allows the user to edit and load the copies as user stylesheets.",
+                            "level": "AA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:control",
+                    "num": "1.8",
+                    "handle": "User Control",
+                    "text": "Help users to orient within, and control, windows and viewports",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:control-summary",
+                            "num": "1.8.0",
+                            "handle": "Summary",
+                            "text": "The user agent provides programmatic and visual cues to keep the user oriented. These include highlighting the viewport (1.8.1, Level A) and customizing the highlighting attributes (1.8.7, Level AA), keeping the focus within the viewport (1.8.2 & 1.8.6, Level A), resizing the viewport (1.8.8, Level A), providing scrollbars that identify when content is outside the visible region (1.8.3, Level A) and which portion is visible (1.8.4, Level A), changing the size of graphical content with zoom (1.8.5, Level A & 1.8.7, Level A), and restoring the focus and point of regard when the user returns to a previously viewed page (1.8.9, Level AA). The user can specify that all viewports have the same user interface elements (1.8.12, Level AA), if and how new viewports open (1.8.10, Level AA), and whether the new viewport automatically gets focus (1.8.11, Level AA). The user can specify that multi-column text blocks be reflowed into a single column (1.8.13, Level AA), that the user can override absolute layout dimensions (1.8.14, Level AA), and linearize the content (1.8.15, Level AA). The user can mark items in a web page and use shortcuts to navigate back to marked items. (1.8.16, Level AAA)."
+                        },
+                        {
+                            "id": "UAAG2:control-highlight-viewport",
+                            "num": "1.8.1",
+                            "handle": "Highlight Viewport",
+                            "text": "The user can have the viewport with the input focus be highlighted.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:control-move-and-focus",
+                            "num": "1.8.2",
+                            "handle": "Move Viewport to Selection and Focus",
+                            "text": "When a viewport's selection or input focus changes, the viewport's content moves as necessary to ensure that the new selection or input focus location is at least partially in the visible portion of the viewport.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:control-scrollbar",
+                            "num": "1.8.3",
+                            "handle": "Provide Viewport Scrollbars",
+                            "text": "When the rendered content extends beyond the viewport dimensions, users can have graphical viewports include scrollbars, overriding any values specified by the author.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:control-position",
+                            "num": "1.8.4",
+                            "handle": "Indicate Viewport Position",
+                            "text": "The user can determine the viewport's position relative to the full extent of the rendered content.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:control-zoom",
+                            "num": "1.8.5",
+                            "handle": "Allow Zoom",
+                            "text": "The user can rescale content within top-level graphical viewports as follows:",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items": "[
+                                        {
+                                            "handle": "Zoom in:",
+                                            "text": "to 500% or more of the default size"
+                                        },
+                                        {
+                                            "handle": "Zoom out",
+                                            "text": "to 10% or less of the default size, so the content fits within the height or width of the viewport"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:control-point-of-regard",
+                            "num": "1.8.6",
+                            "handle": "Maintain Point of Regard",
+                            "text": "The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed.",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "When the point of regard is larger than the viewport, the user agent keeps visible the beginning of the point of regard according to the current language's reading order (e.g. top-left in English)"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:control-customize-highlight",
+                            "num": "1.8.7",
+                            "handle": "Customize Viewport Highlighting",
+                            "text": "When highlighting viewports as specified by 1.8.1 Highlight Viewport, the user can customize attributes of the viewport highlighting mechanism (e.g. color and width of borders).",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:control-resize",
+                            "num": "1.8.8",
+                            "handle": "Allow Viewport Resize",
+                            "text": "The user can resize viewports within restrictions imposed by the platform, overriding any values specified by the author.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:control-history",
+                            "num": "1.8.9",
+                            "handle": "Provide Viewport History",
+                            "text": "For user agents that implement a history mechanism for top-level viewports (e.g. "back" button), the user can return to any state in the viewport history that is allowed by the content, including:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "olist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "restored point of regard"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "input focus"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "user's form field entries"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "It is recommended that selection also be restored."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:control-top-level-open",
+                            "num": "1.8.10",
+                            "handle": "Allow Top-Level Viewport Open on Request",
+                            "text": "The user can specify whether author content can open new top-level viewports (e.g. windows or tabs).",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:control-top-level-focus",
+                            "num": "1.8.11",
+                            "handle": "Allow Top-Level Viewport Focus Control",
+                            "text": "If new top-level viewports (e.g. windows or tabs) are configured to open without explicit user request, the user can specify whether or not top-level viewports take the active keyboard focus when they open.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:control-same-interface",
+                            "num": "1.8.12",
+                            "handle": "Allow Same User Interface",
+                            "text": "The user can specify that all top-level viewports (e.g. windows or tabs) follow the defined user interface configuration.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:control-multi-column"
+                            "num": "1.8.13",
+                            "handle": "Multi-Column Text Reflow",
+                            "text": "The user can specify that recognized multi-column text blocks each be reflowed into a single column.",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:control-ignore-fixed-dim",
+                            "num": "1.8.14",
+                            "handle": "Ignore Fixed Unit Dimensions",
+                            "text": "The user can have the user agent override author-specified unit dimensions.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:control-linearize-content",
+                            "num": "1.8.15",
+                            "handle": "Linearize Content",
+                            "text": "The user can have recognized content rendered as a single column, overriding author-specified formatting of columns, tables, and positioning.",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:control-web-bookmarks",
+                            "num": "1.8.16",
+                            "handle": "Provide Web Page Bookmarks",
+                            "text": "The user can mark items in a web page, then use shortcuts to navigate back to marked items. The user can specify whether a navigation mark disappears after a session, or is persistent across sessions.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:alt-view",
+                    "num": "1.9",
+                    "handle": "Alternate Views",
+                    "text": "Provide alternative views",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:alt-view-summary",
+                            "num": "1.9.0",
+                            "handle": "Summary",
+                            "text": "The user can view the source of content (1.9.2, Level AAA), and an outline view of content. (1.9.1, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:alt-view-outline",
+                            "num": "1.9.1",
+                            "handle": "Outline View",
+                            "text": "Users can view a navigable outline of the headings in rendered content that allows focus to be moved to the corresponding element in the main viewport.",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "An outline view might also include other named elements such as document landmarks."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:alt-view-source",
+                            "num": "1.9.2",
+                            "handle": "Source View",
+                            "text": "The user can view all source text that is available to the user agent.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:element-info",
+                    "num": "1.10",
+                    "handle": "Element Information",
+                    "text": "Provide element information",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:element-info-summary",
+                            "num": "1.10.0",
+                            "handle": "Summary",
+                            "text": "The user can access information about relationships between elements (e.g. form labels, table headers) (1.10.1, Level AA), and extended link information (e.g. title, internal vs. external) (1.10.2, Level AAA)"
+                        },
+                        {
+                            "id": "UAAG2:element-info-related",
+                            "num": "1.10.1",
+                            "handle": "Show Related Elements",
+                            "text": "The user can access the information from explicitly-defined relationships in the content, including at least the following:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "olist"
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "calculated accessible name for images"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "calculated accessible name for controls (e.g. form fields, buttons)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "caption for a table"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "row and column labels for a table cell"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:element-info-hierarchy",
+                            "num": "1.10.2",
+                            "handle": "Show Element hierarchy",
+                            "text": "The user can determine the path of element nodes going from the root element of the element hierarchy to the currently focused or selected element.",
+                            "level": "AAA"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "UAAG2:operable",
+            "num": "2",
+            "handle": "Operable",
+            "text": "Ensure that the user interface is operable",
+            details":[
+                {
+                    "type": "note",
+                    "handle": "Note: Modality Independence:",
+                    "text": "Users interacting with a web browser may do so using one or more input methods including keyboard, mouse, speech, touch, and gesture. It's critical that each user be free to use whatever input method, or combination of methods, works best for a given situation. If every potential user task is made accessible — so multiple modalities are supported — a user can choose what works best. For instance, if a user can't use or doesn't have access to a mouse, but can use and access a keyboard, the keyboard can call a modality independent control to activate an OnMouseOver event. Another example is a user on a mobile device that lacks keyboard who uses uses taps, wirelessly connected devices, and voice commands to simulate discrete or keyboard input. See Independent User Interface: Events for additional information on APIs and techniques for modality independent controls."
+                }
+            ]
+            "guidelines": [
+                {
+                    "id": "UAAG2:keyboard",
+                    "num": "2.1",
+                    "handle": "Keyboard Access",
+                    "text": "Ensure full keyboard access",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:keyboard-summary",
+                            "num": "2.1.0",
+                            "handle": "Summary",
+                            "text": "Every viewport has a keyboard focus (2.1.2, Level A). Users can operate all functions using just the keyboard (2.1.1, Level A), activate important or common features with shortcut keys, (2.1.6, Level A), escape keyboard traps (2.1.3, Level A), specify that selecting an item in a dropdown list or menu not activate that item (2.1.4, Level A) and use standard keys for its platform (2.1.5, Level A)."
+                        },
+                        {
+                            "id": "UAAG2:keyboard-function",
+                            "num": "2.1.1",
+                            "handle": "Provide Full Keyboard Functionality",
+                            "text": "All functionality can be operated via the keyboard using sequential or direct keyboard commands that do not require specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints (e.g. free hand drawing). This does not forbid and should not discourage providing other input methods in addition to keyboard operation including mouse, touch, gesture and speech.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:keyboard-focus",
+                            "num": "2.1.2",
+                            "handle": "Has Keyboard Focus",
+                            "text": "Every viewport has an active or inactive keyboard focus at all times.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:keyboard-traps",
+                            "num": "2.1.3",
+                            "handle": "Avoid Keyboard Traps",
+                            "text": "If keyboard focus can be moved to a component using a keyboard interface (including nested user agents), then focus can be moved away from that component using only a keyboard interface. If this requires more than unmodified arrow or Tab keys (or standard exit methods like Escape), users are advised of the method for moving focus away.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:keyboard-seperate-selection",
+                            "num": "2.1.4",
+                            "handle": "Seperate Selection from Activation",
+                            "text": "The user can specify that focus and selection can be moved without the user agent or author-supplied content further changing focus, selection, or the state of controls.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:keyboard-conventions",
+                            "num": "2.1.5",
+                            "handle": "Follow Text Keyboard Conventions",
+                            "text": "The user agent follows keyboard conventions for the operating environment.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:keyboard-efficient",
+                            "num": "2.1.6",
+                            "handle": "Make Keyboard Access Efficient",
+                            "text": "The user agent user interface includes mechanisms to make keyboard access more efficient than sequential keyboard access.",
+                            "level": "A"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:navigation",
+                    "num": "2.2",
+                    "handle": "Sequential Navigation",
+                    "text": "Provide sequential navigation",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:navigation-summary",
+                            "num": "2.2.0",
+                            "handle": "Summary",
+                            "text": "Users can use the keyboard to navigate sequentially to all the operable elements in the viewport (2.2.1, Level A) as well as between viewports (2.2.2, Level A), and the default navigation order is the document order (2.2.3, Level A). Users can optionally disable wrapping or request a signal when wrapping occurs (2.2.4, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:navigation-between-elem",
+                            "num": "2.2.1",
+                            "handle": "Sequential Navigation Between Elements",
+                            "text": "The user can move the keyboard focus backwards and forwards through all recognized enabled elements in the rendered content of the current top-level viewports.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:navigation-between-landmarks",
+                            "num": "2.2.2",
+                            "handle": "Sequential Navigation Between Landmarks",
+                            "text": "The user can move the keyboard focus backwards and forwards between regions identified by document landmarks.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "The user agent might also include other regions, such as viewports, in the sequential navigation."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:navigation-order",
+                            "num": "2.2.3",
+                            "handle": "Default Navigation Order",
+                            "text": "If the author has not specified a navigation order, the user can have the default sequential navigation order be the source order.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "IAAG2:navigation-options",
+                            "num": "2.2.4",
+                            "handle": "Options for Wrapping in Navigation",
+                            "text": "The user can request notification when sequential navigation wraps at the beginning or end of a document, and can prevent such wrapping.",
+                            "level": "AA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:direct-nav",
+                    "num": "2.3",
+                    "handle": "Navigation and Activation",
+                    "text": "Provide direct navigation and activation",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:direct-nav-summary",
+                            "num": "2.3.0",
+                            "handle": "Summary",
+                            "text": "Users can navigate directly (e.g. using keyboard shortcuts) to elements (2.3.1, Level AA) with the option to immediately activate operable elements (2.3.2, Level AA). Display commands with the elements to make it easier for users to discover the commands (2.3.3 & 2.3.4, Level AA). The user can remap and save direct commands (2.3.5, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:direct-nav-elem",
+                            "num": "2.3.1",
+                            "handle": "Allow Direct Navigation to Enabled Elements",
+                            "text": "The user can move keyboard focus directly to any enabled element in the rendered content.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:direct-nav-activation",
+                            "num": "2.3.2",
+                            "handle": "Allow Direct Activation to Enabled Elements",
+                            "text": "The user can, in a single action, move keyboard focus directly to any enabled element in the rendered content and perform an activation action on that element.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:direct-nav-rendered-content",
+                            "num": "2.3.3",
+                            "handle": "Present Direct Commands from Rendered Content",
+                            "text": "The user can have any recognized direct commands in rendered content (e.g. accesskey, landmark) be presented with their associated elements (e.g. Alt+R to reply to a web email).",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:direct-nav-user-interface",
+                            "num": "2.3.4",
+                            "handle": "Present Direct Commands in User Interface",
+                            "text": "The user can have any direct commands in the UA user interface (e.g. keyboard shortcuts) be presented with their associated user interface controls (e.g. "Ctrl+S" displayed on the "Save" menu item and toolbar button).".
+                            "level": "AA"
+                        },
+                        {
+                          "id": "UAAG2:direct-nav-customize",
+                          "num": "2.3.5",
+                          "handle": "Allow Customized Keyboard Commands",
+                          "text": "The user can remap any keyboard shortcut including recognized author supplied shortcuts (e.g. accesskeys) and UA user interface controls, except for conventional bindings for the operating environment (e.g. arrow keys for navigating within menus).",
+                          "level": "AA"
+                      }
+                  ]
+              },
+              {
+                  "id": "UAAG2:search",
+                  "num": "2.4",
+                  "handle": "Text Search",
+                  "text": "Provide text search",
+                  "successcriteria":[
+                      {
+                          "id": "UAAG2:search-summary",
+                          "num": "2.4.0",
+                          "handle": "Summary",
+                          "text": "Users can search rendered content (2.4.1, Level A) forward or backward (2.4.2, Level A) and can have the matched content highlighted in the viewport (2.4.3, Level A). The user is notified in an accessible manner if there is no match (2.4.4, Level A). Users can also search by case and for text within alternative content (2.4.5, Level AA)."
+                      },
+                      {
+                          "id": "UAAG2:search-text",
+                          "num": "2.4.1",
+                          "handle": "Text Search",
+                          "text": "The user can perform a search within rendered content, including rendered text alternatives and rendered generated content, for any sequence of printing characters from the document character set.",
+                          "level": "A"
+                      },
+                      {
+                          "id": "UAAG2:search-direction",
+                          "num": "2.4.2",
+                          "handle": "Search Direction",
+                          "text": "The user can search forward or backward in rendered content.",
+                          "level": "A"
+                      },
+                      {
+                          "id": "UAAG2:search-match-found",
+                          "num": "2.4.3",
+                          "handle": "Match Found",
+                          "text": "When a search operation produces a match, the matched content is highlighted, the viewport is scrolled if necessary so that the matched content is within its visible area, and the user can search from the location of the match.",
+                          "level": "A"
+                      },
+                      {
+                          "id": "UAAG2:search-alert",
+                          "num": "2.4.4",
+                          "handle": "Alert on Wrap or No Match",
+                          "text": "The user can choose to receive notification when there is no match to a search operation. The user can choose to receive notification when the search continues from the beginning or end of content.",
+                          "level": "A"
+                      },
+                      {
+                          "id": "UAAG2:search-alt-content",
+                          "num": "2.4.5",
+                          "handle": "Alternative Content Search",
+                          "text": "The user can perform text searches within alternative content that is text (e.g. text alternatives for non-text content, captions) even when the alternative content is not rendered onscreen.",
+                          "level": "AA"
+                      }
+                  ]
+              },
+              {
+                  "id": "UAAG2:struct-nav",
+                  "num": "2.5",
+                  "handle": "Structural Navigation",
+                  "text": "Provide structural navigation",
+                  "successcriteria":[
+                      {
+                          "id": "UAAG2:struct-nav-summary",
+                          "num": "2.5.0",
+                          "handle": "Summary",
+                          "text": "Users can navigate (2.5.1, Level A) content hierarchy."
+                      },
+                      {
+                          "id": "UAAG2:struct-nav-by-heading"
+                          "num": "2.5.1",
+                          "handle": "Provide Structural Navigation by Heading and within Tables",
+                          "text": "The user agent provides at least the following types of structural navigation, where the structure types are recognized:"
+                          "level": "AA".
+                          "details":[
+                              {
+                                  "type": "ulist",
+                                  "items":[
+                                      {
+                                          "handle": "",
+                                          "text": "By heading"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "By content sections"
+                                      },
+                                      {
+                                          "handle": "",
+                                          "text": "Within tables"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:config-store",
+                    "num": "2.6",
+                    "handle": "Preference Settings",
+                    "text": "Configure and store preference settings",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:config-store-summary",
+                            "num": "2.6.0",
+                            "handle": "Summary",
+                            "text": "Users can restore preference settings to default (2.6.2, Level A), and accessibility settings persist between sessions (2.6.1, Level A). Users can manage multiple sets of preference settings (2.6.3, Level AA), and adjust preference settings outside the user interface so the current user interface does not prevent access (2.6.4, Level AA), and transport settings to compatible systems (2.6.5, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:config-store-persistent",
+                            "num": "2.6.1",
+                            "handle": "Allow Persistent Accessibility Settings",
+                            "text": "User agent accessibility preference settings persist between sessions.",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "User agents may have a public access setting that turns this off."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:config-store-restore",
+                            "num": "2.6.2",
+                            "handle": "Allow Restore All to Default",
+                            "text": "The user can restore all preference settings to default values.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:config-store-multi-sets",
+                            "num": "2.6.3",
+                            "handle": "Allow Multiple Sets of Preference Settings",
+                            "text": "The user can save and retrieve multiple sets of user agent preference settings.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:config-store-changes",
+                            "num": "2.6.4",
+                            "handle": "Allow Preference Changes from outside the User Interface",
+                            "text": "The user can adjust any preference settings required to meet the User Agent Accessibility Guidelines (UAAG) 2.0 from outside the UA user interface.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "UAAG2:config-store-transferable",
+                            "num": "2.6.5",
+                            "handle": "Make Preference Settings Transferable",
+                            "text": "The user can transfer all compatible user agent preference settings between devices.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:custom-display",
+                    "num": "2.7",
+                    "handle": "Custom Display",
+                    "text": "Customize display of graphical controls",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:custom-display-summary",
+                            "num": "2.7.0",
+                            "handle": "Summary",
+                            "text": "It's recommended that users can add, remove, reposition, and assign shortcuts to user agent controls, and restore them to their default settings (2.7.1, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:custom-display-controls",
+                            "num": "2.7.1",
+                            "handle": "Customize Display, of Controls for User Interface Commands, Functions, and Add-ons",
+                            "text": "The user can customize which user agent commands, functions, and add-ons are displayed within the user agent user interface as follows:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items":[
+                                        {
+                                            "handle": "Show",
+                                            "text": "The user can choose to display any controls available within the user agent user interface, including user-installed add-ons. It is acceptable to limit the total number of controls that are displayed onscreen."
+                                        },
+                                        {
+                                            "handle": "Simplify",
+                                            "text": "The user can simplify the default user interface by choosing to display only commands essential for basic operation (e.g. by hiding some controls)."
+                                        },
+                                        {
+                                            "handle": "Reposition",
+                                            "text": "The user can choose to reposition individual controls within containers (e.g. toolbars or tool palettes), as well as reposition the containers themselves to facilitate physical access (e.g. to minimize hand travel on touch screens, or to facilitate preferred hand access on handheld mobile devices)."
+                                        },
+                                        {
+                                            "handle": "Assign Activation Keystrokes or Gestures",
+                                            "text": "The user can choose to view, assign or change default keystrokes or gestures used to activate controls."
+                                        },
+                                        {
+                                            "handle": "Reset",
+                                            "text": "The user has the option to reset the containers and controls to their default configuration."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:time-independent",
+                    "num": "2.8",
+                    "handle": "Time-Independent Interaction",
+                    "text": "Allow time-independent interaction",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:time-independent-summary",
+                            "num": "2.8.0",
+                            "handle": "Summary",
+                            "text": "Users can extend the time limits for user input when such limits are controllable by the user agent (2.8.1, Level A)."
+                        },
+                        {
+                            "id": "UAAG2:time-independent-limits",
+                            "num": "2.8.1",
+                            "handle": "Adjustable Time Limits",
+                            "text": "The UA user interface does not include time limits or at least one of the following is true:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items":[
+                                        {
+                                            "handle": "Turn Off:",
+                                            "text": "Users are allowed to turn off the time limit before encountering it"
+                                        },
+                                        {
+                                            "handle": "Adjust:",
+                                            "text": "Users are allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting",
+                                        },
+                                        {
+                                            "handle": "Extend:",
+                                            "text": "Users are warned before time expires and given at least 20 seconds to extend the time limit with a simple action (e.g. "press the space bar"), and users are allowed to extend the time limit at least ten times"
+                                        },
+                                        {
+                                            "handle": "Real-time Exception:",
+                                            "text": "The time limit is a required part of a real-time event and no alternative to the time limit is possible"
+                                        },
+                                        {
+                                            "handle": "Essential Exception:",
+                                            "text": "The time limit is essential and extending it would invalidate the activity"
+                                        },
+                                        {
+                                            "handle": "20 Hour Exception:",
+                                            "text": "The time limit is longer than 20 hours"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:seizure",
+                    "num": "2.9",
+                    "handle": "Avoid Flashing",
+                    "text": "Help users avoid flashing that could cause seizures",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:seizure-summary",
+                            "num": "2.9.0",
+                            "handle": "Summary",
+                            "text": "To help users avoid seizures, the default configuration prevents the browser user interface from flashing more than three times a second above luminescence or color thresholds (2.9.1, Level A), or even below the thresholds (2.9.2, Level AAA)."
+                        },
+                        {
+                            "id": "UAAG2:seizure-three-or-below",
+                            "num": "2.9.1",
+                            "handle": "Three Flashes or Below Threshold",
+                            "text": "In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period, unless the flash is below general flash and red flash thresholds.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:seizure-three-flashes",
+                            "num": "2.9.2",
+                            "handle": "Three Flashes",
+                            "text": "In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period (regardless of whether not the flash is below the general flash and red flash thresholds).",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:time-media",
+                    "num": "2.10",
+                    "handle": "Time-Based Media",
+                    "text": "Provide control of time-based media",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:time-media-summary",
+                            "num": "2.10.0",
+                            "handle": "Summary",
+                            "text": "The user can present placeholders for time-based media (2.10.1, Level A) and executable regions (2.10.2, Level A), or block all executable content (2.10.3, Level A), adjust playback (2.10.4, Level A), stop/pause/resume (2.10.5, Level A), navigate by time (2.10.6, Level A) or semantic structures such as chapter (2.10.7, Level AA). It is recommended that the user can adjust contrast and brightness of visual time-based media (2.10.8, Level AAA). Enable or disable tracks is included in 1.1.1 Render Alternative Content."
+                        },
+                        {
+                            "id": "UAAG2:time-media-load-only",
+                            "num": "2.10.1",
+                            "handle": "Time-Based Media Load-Only",
+                            "text": "The user can override the play on load of recognized time-based media content such that the content is not played until explicit user request.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:time-media-exec",
+                            "num": "2.10.2",
+                            "handle": "Execution Placeholder",
+                            "text": "The user can request a placeholder instead of executable content that would normally be contained within an on-screen area (e.g. Applet, Flash), until explicit user request to execute.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:time-media-toggle",
+                            "num": "2.10.3",
+                            "handle": "Execution Toggle",
+                            "text": "The user can turn on/off the execution of dynamic or executable content (e.g. Javascript, canvas, media).",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:time-media-playback"
+                            "num": "2.10.4",
+                            "handle": "Adjustable Playback Rate for Prerecorded Content",
+                            "text": "The user can adjust the playback rate of prerecorded time-based media content, such that all of the following are true:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Playback Rate",
+                                            "text": "The user can adjust the playback rate of the time-based media tracks to between 50% and 250% of real time."
+                                        },
+                                        {
+                                            "handle": "Pitch",
+                                            "text": "Speech whose playback rate has been adjusted by the user maintains pitch in order to limit degradation of the speech quality."
+                                        },
+                                        {
+                                            "handle": "Synchronization",
+                                            "text": "Audio and video tracks remain synchronized across this required range of playback rates."
+                                        },
+                                        {
+                                            "handle": "Reset",
+                                            "text": The user agent provides a function that resets the playback rate to normal (100%)."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:time-media-stop-pause-resume",
+                            "num": "2.10.5",
+                            "handle": "Stop/Pause/Resume Time-Based Media",
+                            "text": "The user can stop, pause, and resume rendered audio and animation content (e.g video, animation, changing text) that lasts three or more seconds at the default playback rate.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:time-media-navigation-by-time",
+                            "num": "2.10.6",
+                            "handle": "Navigation of Time-Based Media by Time",
+                            "text": "If time-based media lasts three or more seconds at the default playback rate, the user can navigate it using a continuous scale and by relative time units.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:time-media-navigation-by-semantics",
+                            "num": "2.10.7",
+                            "handle": "Navigation of Time-Based Media by Semantics",
+                            "text": "The user can navigate by semantic structure within the time-based media, such as by chapters or scenes present in the media.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:time-media-contrast-and-brightness",
+                            "num": "2.10.8",
+                            "handle": "Video Contrast and Brightness",
+                            "text": "Users can adjust the contrast and brightness of visual time-based media.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:support",
+                    "num": "2.11",
+                    "handle": "Input Devices",
+                    "text": "Support other input devices",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:support-summary",
+                            "num": "2.11.0",
+                            "handle": "Summary",
+                            "text": "User agents support platform text input devices including text input (2.11.1, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:support-text-input",
+                            "num": "2.11.1",
+                            "handle": "Text Input With Any Device",
+                            "text": "If an input device is supported by the platform, all user agent functionality including text input can be operated using that device.",
+                            "level": "AA"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "UAAG2:understandable",
+            "num": "3",
+            "handle": "Understandable",
+            "text": "Ensure that the user interface is understandable",
+            "guidelines": [
+                {
+                    "id": "UAAG2:mistakes",
+                    "num": "3.1",
+                    "handle": "Avoid and Correct Mistakes",
+                    "text": "Help users avoid and correct mistakes",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:mistakes-summary",
+                            "num": "3.1.0",
+                            "handle": "Summary",
+                            "text": "Users can undo text entry (3.1.1, Level A), avoid or undo settings changes (3.1.2, Level A), and receive indications of progress activity (3.1.3, Level A). It is recommended that users can have their text checked for spelling errors (3.1.4, Level AA), go back after navigating (3.1.5, Level AA), have form submissions require confirmation (3.1.6, Level AA), have auto-form fill of basic information (3.1.7, Level AA), and save form entry data with a local save (3.1.8, Level AA)."
+                        },
+                        {
+                            "id": "UAAG2:mistakes-undo",
+                            "num": "3.1.1",
+                            "handle": "Text Entry Undo",
+                            "text": "The user can reverse recognized text entry actions prior to submission.",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "Submission can be triggered in many different ways, such as clicking a submit button, typing a key in a control with an onkeypress event, or by a script responding to a timer."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:mistakes-reversed-or-confirmed",
+                            "num": "3.1.2",
+                            "handle": "Settings Changed can be Reversed or Confirmed",
+                            "text": "If the user agent provides mechanisms for changing its user interface settings, it either allows the user to reverse the setting changes, or the user agent can require user confirmation to proceed.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:mistakes-retrieval",
+                            "num": "3.1.3",
+                            "handle": "Retrieval Progress",
+                            "text": "By default, the user agent shows the state of content retrieval activity.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:mistakes-spell-check",
+                            "num": "3.1.4",
+                            "handle": "Spell Check",
+                            "text": "The user can have spelling assistance for editable text in rendered content.",
+                            "level": "AA",
+                        },
+                        {
+                            "id": "UAAG2:mistakes-back",
+                            "num": "3.1.5",
+                            "handle": "Back Button",
+                            "text": "The user can reverse recognized navigation between web addresses (e.g. standard "back button" functionality). ",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:mistakes-submission",
+                            "num": "3.1.6",
+                            "handle": "Form Submission Confirm",
+                            "text": "The user can specify whether or not recognized form submissions must be confirmed.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:mistakes-auto-fill",
+                            "num": "3.1.7",
+                            "handle": "Form Auto-Fill",
+                            "text": "The user can have the following information stored and used to auto-fill form fields by request:",
+                            "level": "AA",
+                            "details":[
+                                {
+                                    "type": "olist",
+                                    "items":[
+                                        {
+                                            "handle": "",
+                                            "text": "user's name"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "user's email address"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "user's phone number"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:mistakes-save",
+                            "num": "3.1.8",
+                            "handle": "Save Form Entries",
+                            "text": "If the user agent provides a feature to save local versions of web content, then any form fields the user has filled retain any entries in the saved version.",
+                            "level": "AA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:doc",
+                    "num": "3.2",
+                    "handle": "Document Interface",
+                    "text": "Document the user agent user interface including accessibility features",
+                    "successcriteria": [
+                        {
+                            "id": "UAAG2:doc-summary",
+                            "num": "3.2.0",
+                            "handle": "Summary",
+                            "text": "User documentation is available in an accessible format (3.2.1, Level A), it includes accessibility features (3.2.2, Level A), it documents all the user features (3.2.3, Level AA), it delineates differences between versions (3.2.4, Level AA), and provides a centralized view of conformance UAAG2.0 (3.2.5, Level AAA)."
+                        },
+                        {
+                            "id": "UAAG2:doc-accessible",
+                            "num": "3.2.1",
+                            "handle": "Accessible Documentation",
+                            "text": "Product documentation is available in a format that meets success criteria of WCAG 2.0 level "A" or greater.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:doc-features",
+                            "num": "3.2.2",
+                            "handle": "Describe Accessibility Features",
+                            "text": "For each user agent feature that is used to meet UAAG 2.0, at least one of the following is true:",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "olist",
+                                    "items":[
+                                        {
+                                            "handle": "Described in the Documentation:",
+                                            "text": "Use of the feature is explained in the user agent's documentation"
+                                        },
+                                        {
+                                            "handle": "Described in the Interface:",
+                                            "text": "Use of the feature is explained in the UA user interface"
+                                        },
+                                        {
+                                            "handle": "Platform Surface:",
+                                            "text": "The feature is a service provided by an underlying platform"
+                                        },
+                                        {
+                                            "handle": "Not Used by Users",
+                                            "text": "The feature is not used directly by users (e.g., passing information to a platform accessibility service)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:doc-all-features",
+                            "num": "3.2.3",
+                            "handle": "Document All Features",
+                            "text": "For each user agent feature, at least one of the following is true:",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items": [
+                                        {
+                                            "handle": "Described in the Documentation:",
+                                            "text": "Use of the feature is explained in the user agent's documentation"
+                                        },
+                                        {
+                                            "handle": "Described in the Interface:",
+                                            "text": "Use of the feature is explained in the UA user interface"
+                                        },
+                                        {
+                                            "handle": "Platform Surface:",
+                                            "text": "The feature is a service provided by an underlying platform"
+                                        },
+                                        {
+                                            "handle": "Not Used by Users",
+                                            "text": "The feature is not used directly by users (e.g., passing information to a platform accessibility service)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:doc-changes",
+                            "num": "3.2.4",
+                            "handle": "Changes Between Versions",
+                            "text": "Changes to features that meet UAAG 2.0 success criteria since the previous user agent release are documented.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:doc-central",
+                            "num": "3.2.5",
+                            "handle": "Centralized View",
+                            "text": "There is a dedicated section of the documentation that presents a view of all features of the user agent necessary to meet the requirements of User Agent Accessibility Guidelines 2.0.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "UAAG2:behavior",
+                    "num": "3.3",
+                    "handle": "Predicable Behavior",
+                    "text": "Make the user agent behave in predictable ways",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:behavior-summary",
+                            "num": "3.3.0",
+                            "handle": "Summary",
+                            "text": "Users can prevent non-requested focus changes (3.3.1, Level A)."
+                        },
+                        {
+                            "id": "UAAG2:behavior-unpredictable",
+                            "num": "3.3.1",
+                            "handle": "Avoid Unpredictable Focus",
+                            "text": "The user can prevent focus changes that are not a result of explicit user request.",
+                            "level": "A"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "UAAG2:access",
+            "num": "4",
+            "handle": "Access",
+            "text": "Facilitate programmatic access",
+            "guidelines": [
+                {
+                    "id": "UAAG2:assist-tech",
+                    "num": "4.1",
+                    "handle": "Access to Assistive Technology",
+                    "text": "Facilitate programmatic access to assistive technology",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:assist-tech-summary",
+                            "num": "4.1.0",
+                            "handle": "Summary",
+                            "text": "The user agent supports platform accessibility services (4.1.1, Level A), including providing information about all controls and operation (4.1.2, Level A), access to DOMs when platform accessibility services are not available (4.1.4, Level A). Controls can be adjusted programmatically (4.1.5, Level A). Where something can't be made accessible, provide an accessible alternative version, such as a standard window in place of a customized window (4.1.3, Level A).",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "UAAG 2.0 assumes that a platform accessibility service will be built on top of underlying security architectures that will allow user agents to comply with both the success criteria and security needs."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:assist-tech-platform-support",
+                            "num": "4.1.1",
+                            "handle": "Support Platform Accessibility Services",
+                            "text": "The user agent supports relevant platform accessibility services.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:assist-tech-expose",
+                            "num": "4.1.2",
+                            "handle": "Expose Accessible Properties",
+                            "text": "For all user interface components (including UA user interface, rendered content, and generated content) the user agent makes available the following properties and any change notifications via a platform accessibility service:",
+                            "level": "A",
+                            "details":[
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "",
+                                            "text": "Name, Role, State"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Value"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Selection"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Focus"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Bounding dimensions and coordinates"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Font family of text"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Foreground and background color for text"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Highlighting"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Keyboard commands"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Caret position"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Explicitly defined relationships (e.g. ARIA relationships [ARIA 1.0])"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:assist-tech-equiv",
+                            "num": "4.1.3",
+                            "handle": "Provide Equivalent Accessible Alternatives",
+                            "text": "If UA user interface functionality cannot be exposed through platform accessibility services, then the user agent provides equivalent functionality that can be exposed through the platform accessibility service.",
+                            "level": "A"
+                        },
+                        {
+                            "id": UAAG2:assist-tech-doms",
+                            "num": "4.1.4",
+                            "handle": "DOMs Programmatically Available as fallback",
+                            "text": "If the user agent accessibility API does not provide sufficient information to one or more platform accessibility services, then Document Object Models (DOM), must be made programmatically available to assistive technologies.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:assist-tech-content-interact",
+                            "num": "4.1.5",
+                            "handle": "Make Content Interaction Programmatically Available",
+                            "text": "If the user can interact with content (e.g. by checking a box or editing a text area), the same degree of interaction is programmatically available.",
+                            "level": "A"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "UAAG2:conventions",
+            "num": "5",
+            "handle": "Conventions",
+            "text": "Comply with applicable specifications and conventions",
+            "guidelines": [
+                {
+                    "id": "UAAG2:comply",
+                    "num": "5.1",
+                    "handle": "Applicable Specifications and Conventions",
+                    "text": "Comply with applicable specifications and conventions",
+                    "successcriteria":[
+                        {
+                            "id": "UAAG2:comply-summary",
+                            "num": "5.1.0",
+                            "handle": "Summary",
+                            "text": "When the browser's controls are authored in HTML or similar standards, they need to meet W3C's Web Content Accessibility Guidelines (5.1.1, Levels A, AA, AAA). The user agent supports the accessibility features of content formats (5.1.2, Level A) and of the platform (5.1.3, Level A), allows handling of unrendered technologies (5.1.4, Level A), allows alternative viewers (5.1.4, Level AA), and allows users to report accessibility issues (5.1.5, Level AAA)."
+                        },
+                        {
+                            "id": "UAAG2:comply-wcag",
+                            "num": "5.1.1",
+                            "handle": "Comply with WCAG",
+                            "text": "Web-based UA user interfaces meet the WCAG 2.0 success criteria.",
+                            "level": "(Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; and Level AAA to meet WCAG 2.0 Level A, AA, and AAA success criteria)",
+                            "details":[
+                                {
+                                    "type": "note",
+                                    "handle": "Note",
+                                    "text": "This success criterion does not apply to native UA user interfaces, but does include any parts of native user agents that are web-based (e.g. help systems). However, it is recommended that developers of native user agent user interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) [WCAG2ICT]."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "UAAG2:comply-implement",
+                            "num": "5.1.2",
+                            "handle": "Implement Accessibility Features of Web Content Technology Specifications:",
+                            "text": "Implement the accessibility features of web content technology specifications. Accessibility features are those that are either",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "",
+                                            "text": "Identified as such in the content specifications"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Allow authors to satisfy a requirement of WCAG 2.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note 1",
+                                    "text": "If a conformance claim is filed, cite the implemented specifications in the conformance claim. See Components of a UAAG 2.0 Conformance Claim - #9 Web Content Technologies."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Note 2",
+                                    "text": "When a rendering requirement of another specification contradicts a requirement of UAAG 2.0, the user agent can disregard the rendering requirement of the other specification and still satisfy this guideline."
+                                }
+                            ]
+                        },
+                        {
+                           "id": "UAAG2:comply-platform-features",
+                           "num": "5.1.3",
+                            "handle": "Implement Accessibility Features of the Platform",
+                            "text": "If the user agent contains native user interfaces, then those native user interfaces follow user interface accessibility guidelines for the platform.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "UAAG2:comply-content-elements",
+                            "num": "5.1.4",
+                            "handle": "Allow Content Elements to be Rendered in Alternative Viewers",
+                            "text": "The user can select content elements and have them rendered in alternative viewers.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "UAAG2:comply-report",
+                            "num": "5.1.5",
+                            "handle": "Enable Reporting of User Agent Accessibility Faults:,
+                            "text": "The user agent provides a mechanism for users to report user agent accessibility issues.",
+                            "level": "AAA"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
