@@ -26,7 +26,7 @@
                             "level": "A",
                             "details": [
                                 {
-                                    "type": "note:,
+                                    "type": "note",
                                     "handle": "Note",
                                     "text": "It is recommended that the user agent allow the user to choose whether the alternative content replaces or supplements the original content element."
                                 }
