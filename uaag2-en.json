@@ -67,7 +67,7 @@
                                     ]
                                 },
                                 {
-                                    "type": "note"
+                                    "type": "note",
                                     "handle": "Note",
                                     "text": "Depending on the screen area available, the display of the primary time-based media can need to be reduced in size to meet this requirement."
                                 }
@@ -146,13 +146,13 @@
                     "id": "UAAG2:content-highlight",
                     "num": "1.3",
                     "handle": "Highlighting Content",
-                    "text": "Provide highlighting for selection, keyboard focus, enabled elements, visited links"
+                    "text": "Provide highlighting for selection, keyboard focus, enabled elements, visited links",
                     "successcriteria":[
                         {
                             "id": "UAAG2:content-highlight-summary",
                             "num": "1.3.0",
                             "handle": "Summary",
-                            "text": The user can visually distinguish between selected, focused, and enabled items; and recently visited links (1.3.1); with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).",
+                            "text": "The user can visually distinguish between selected, focused, and enabled items; and recently visited links (1.3.1); with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).",
                         },
                         {
                             "id": "UAAG2:content-highlight-distinguish",
@@ -213,7 +213,7 @@
                         {
                             "id": "UAAG2:content-highlight-focus",
                             "num": "1.3.3",
-                            "handle": Highlighting Active Keyboard Focus",
+                            "handle": "Highlighting Active Keyboard Focus",
                             "text": "The user can set all of the following characteristics of active keyboard focus highlighting, overriding any values specified by the author:",
                             "level": "AA",
                             "details":[
@@ -364,7 +364,7 @@
                                         },
                                         {
                                             "handle": "",
-                                            "text": Text color and background color, choosing from all platform color options"
+                                            "text": "Text color and background color, choosing from all platform color options"
                                         },
                                         {
                                             "handle": "",
@@ -735,7 +735,7 @@
                             "details":[
                                 {
                                     "type": "ulist",
-                                    "items": "[
+                                    "items": [
                                         {
                                             "handle": "Zoom in:",
                                             "text": "to 500% or more of the default size"
@@ -965,7 +965,7 @@
             "num": "2",
             "handle": "Operable",
             "text": "Ensure that the user interface is operable",
-            details":[
+            "details":[
                 {
                     "type": "note",
                     "handle": "Note: Modality Independence:",
@@ -1115,7 +1115,7 @@
                             "id": "UAAG2:direct-nav-user-interface",
                             "num": "2.3.4",
                             "handle": "Present Direct Commands in User Interface",
-                            "text": "The user can have any direct commands in the UA user interface (e.g. keyboard shortcuts) be presented with their associated user interface controls (e.g. "Ctrl+S" displayed on the "Save" menu item and toolbar button).".
+                            "text": "The user can have any direct commands in the UA user interface (e.g. keyboard shortcuts) be presented with their associated user interface controls (e.g. "Ctrl+S" displayed on the "Save" menu item and toolbar button).",
                             "level": "AA"
                         },
                         {
@@ -1189,11 +1189,11 @@
                           "text": "Users can navigate (2.5.1, Level A) content hierarchy."
                       },
                       {
-                          "id": "UAAG2:struct-nav-by-heading"
+                          "id": "UAAG2:struct-nav-by-heading",
                           "num": "2.5.1",
                           "handle": "Provide Structural Navigation by Heading and within Tables",
-                          "text": "The user agent provides at least the following types of structural navigation, where the structure types are recognized:"
-                          "level": "AA".
+                          "text": "The user agent provides at least the following types of structural navigation, where the structure types are recognized:",
+                          "level": "AA",
                           "details":[
                               {
                                   "type": "ulist",
@@ -1434,7 +1434,7 @@
                             "level": "A"
                         },
                         {
-                            "id": "UAAG2:time-media-playback"
+                            "id": "UAAG2:time-media-playback",
                             "num": "2.10.4",
                             "handle": "Adjustable Playback Rate for Prerecorded Content",
                             "text": "The user can adjust the playback rate of prerecorded time-based media content, such that all of the following are true:",
@@ -1457,7 +1457,7 @@
                                         },
                                         {
                                             "handle": "Reset",
-                                            "text": The user agent provides a function that resets the playback rate to normal (100%)."
+                                            "text": "The user agent provides a function that resets the playback rate to normal (100%)."
                                         }
                                     ]
                                 }
@@ -1834,7 +1834,7 @@
                             "level": "A"
                         },
                         {
-                            "id": UAAG2:assist-tech-doms",
+                            "id": "UAAG2:assist-tech-doms",
                             "num": "4.1.4",
                             "handle": "DOMs Programmatically Available as fallback",
                             "text": "If the user agent accessibility API does not provide sufficient information to one or more platform accessibility services, then Document Object Models (DOM), must be made programmatically available to assistive technologies.",
@@ -1932,7 +1932,7 @@
                         {
                             "id": "UAAG2:comply-report",
                             "num": "5.1.5",
-                            "handle": "Enable Reporting of User Agent Accessibility Faults:,
+                            "handle": "Enable Reporting of User Agent Accessibility Faults",
                             "text": "The user agent provides a mechanism for users to report user agent accessibility issues.",
                             "level": "AAA"
                         }
