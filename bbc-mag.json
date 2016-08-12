@@ -382,5 +382,234 @@
                 {
                     "id": "BBCMAG:dev-focus",
                     "num": "2.3",
+                    "handle": "Focus",
+                    "text": "",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "items": [
+                                {
+                                    "handle": "Must",
+                                    "text": "Focusable Elements"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Keyboard Trap"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Content Order"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Focus Order"
+                                },
+                                {
+                                    "handle": "Must Not",
+                                    "text": "Managing Focus"
+                                },
+                                {
+                                    "handle": "Must Not",
+                                    "text": "Touch Elements"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Alternative Input Methods"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-form",
+                    "num": "2.4",
+                    "handle": "Forms",
+                    "text": "While UX may have initial responsibility for the layout and presentation of forms developers need to uphold this and test as forms are being built.",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Input Labels"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Form Layout"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Keyboard Input Types"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Group Form Inputs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-image",
+                    "num": "2.5",
+                    "handle": "Images",
+                    "text": "If images of text are used, or meaningful background images, developers should work with Editorial to provide a text alternative.",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "",
+                                    "text": "Images of Text"
+                                },
+                                {
+                                    "handle": "",
+                                    "text": "Background Images"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-link",
+                    "num": "2.6",
+                    "handle": "Links",
+                    "text": "Design should allow for images and links to the same resource to be coded together as one a href.",
+                    "details": [
+                        {
+                            "type": "ulist",
+                            "items":[
+                                {
+                                    "handle": "",
+                                    "text": "Repeated Links"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-notification",
+                    "num": "2.7",
+                    "handle": "Notifications",
+                    "text": "The logic and text for the above should originate from UX and Editorial and be implemented by development.",
+                    "details": [
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Instructions"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Changes of State"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Standard Operating System Alerts"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Error Messages"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Error Correction"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-script-dyn-content",
+                    "num": "2.8",
+                    "handle": "Scripts and Dynamic Content",
+                    "text": "",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Javascript Alternatives"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Controlling Media"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Page Refreshes"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Timeouts"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-struct",
+                    "num": "2.9",
+                    "handle": "Structure",
+                    "text": "Structure, while mapped by UX and worded by Editorial must being implemented correctly by development. While the basic framework must be mapped early it is possible it will evolve while the product is being built and structure should evolve with it.",
+                    "details":[
+                        {
+                            "types": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Unique Page//Screen Titles"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Headings"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Containers and Landmarks"
+                                },
+                                {
+                                    "handle": "Must",
+                                    "text": "Duplicated Links"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-text-equiv",
+                    "num": "2.10",
+                    "handle": "Text Equivalents",
+                    "text": "While the copy for text alternatives is the responsibility of Editorial, Development must ensure the techniques used to deliver it are accessible across devices.",
+                    "details":[
+                        {
+                            "type": "olist",
+                            "items":[
+                                {
+                                    "handle": "Must",
+                                    "text": "Alternatives for Non Text-Text Content"
+                                },
+                                {
+                                    "handle": "Should",
+                                    "text": "Decorative Content"
+                                },
+                                {
+                                    "handle": "Must Note",
+                                    "text": "Tooltips and Supplementary Information"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BBCMAG:dev-recommendation",
+                    "num": "2.11",
+                    "handle": "Recommendations",
+                    "text": "Use Progressive Enhancement"
+                }
+            ]
+        }
     ]
 }
